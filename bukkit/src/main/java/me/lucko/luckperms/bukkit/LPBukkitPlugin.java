@@ -29,6 +29,7 @@ import me.lucko.luckperms.api.Contexts;
 import me.lucko.luckperms.api.LuckPermsApi;
 import me.lucko.luckperms.api.event.user.UserDataRecalculateEvent;
 import me.lucko.luckperms.bukkit.calculators.BukkitCalculatorFactory;
+import me.lucko.luckperms.bukkit.compat.LuckPermsBrigadier;
 import me.lucko.luckperms.bukkit.contexts.BukkitContextManager;
 import me.lucko.luckperms.bukkit.contexts.WorldCalculator;
 import me.lucko.luckperms.bukkit.listeners.BukkitConnectionListener;
@@ -142,6 +143,17 @@ public class LPBukkitPlugin extends AbstractLuckPermsPlugin {
         main.setTabCompleter(this.commandManager);
         main.setDescription("Manage permissions");
         main.setAliases(Arrays.asList("lp", "perm", "perms", "permission", "permissions"));
+
+        // setup brigadier
+        if (LuckPermsBrigadier.isSupported()) {
+            this.bootstrap.getServer().getScheduler().runTaskLater(this.bootstrap, () -> {
+                try {
+                    LuckPermsBrigadier.register(this);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }, 1L);
+        }
     }
 
     @Override

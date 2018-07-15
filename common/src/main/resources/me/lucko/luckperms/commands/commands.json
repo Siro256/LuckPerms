@@ -1,0 +1,2457 @@
+{
+  "type": "literal",
+  "name": "luckperms",
+  "children": [
+    {
+      "type": "literal",
+      "name": "user",
+      "children": [
+        {
+          "type": "argument",
+          "name": "user",
+          "parser": "brigadier:string",
+          "properties": "SINGLE_WORD",
+          "children": [
+            {
+              "type": "literal",
+              "name": "info",
+              "children": []
+            },
+            {
+              "type": "literal",
+              "name": "permission",
+              "children": [
+                {
+                  "type": "literal",
+                  "name": "info",
+                  "children": []
+                },
+                {
+                  "type": "literal",
+                  "name": "set",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "node",
+                      "parser": "brigadier:string",
+                      "properties": "QUOTABLE_PHRASE",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "value",
+                          "parser": "brigadier:bool",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "context",
+                              "parser": "brigadier:string",
+                              "properties": "GREEDY_PHRASE",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "unset",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "node",
+                      "parser": "brigadier:string",
+                      "properties": "QUOTABLE_PHRASE",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "context",
+                          "parser": "brigadier:string",
+                          "properties": "GREEDY_PHRASE",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "settemp",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "node",
+                      "parser": "brigadier:string",
+                      "properties": "QUOTABLE_PHRASE",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "value",
+                          "parser": "brigadier:bool",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "duration",
+                              "parser": "brigadier:string",
+                              "properties": "SINGLE_WORD",
+                              "children": [
+                                {
+                                  "type": "argument",
+                                  "name": "context",
+                                  "parser": "brigadier:string",
+                                  "properties": "GREEDY_PHRASE",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "unsettemp",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "node",
+                      "parser": "brigadier:string",
+                      "properties": "QUOTABLE_PHRASE",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "context",
+                          "parser": "brigadier:string",
+                          "properties": "GREEDY_PHRASE",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "check",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "node",
+                      "parser": "brigadier:string",
+                      "properties": "QUOTABLE_PHRASE",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "context",
+                          "parser": "brigadier:string",
+                          "properties": "GREEDY_PHRASE",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "checkinherits",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "node",
+                      "parser": "brigadier:string",
+                      "properties": "QUOTABLE_PHRASE",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "context",
+                          "parser": "brigadier:string",
+                          "properties": "GREEDY_PHRASE",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "clear",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "context",
+                      "parser": "brigadier:string",
+                      "properties": "GREEDY_PHRASE",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "literal",
+              "name": "parent",
+              "children": [
+                {
+                  "type": "literal",
+                  "name": "info",
+                  "children": []
+                },
+                {
+                  "type": "literal",
+                  "name": "set",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "group",
+                      "parser": "brigadier:string",
+                      "properties": "SINGLE_WORD",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "context",
+                          "parser": "brigadier:string",
+                          "properties": "GREEDY_PHRASE",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "add",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "group",
+                      "parser": "brigadier:string",
+                      "properties": "SINGLE_WORD",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "context",
+                          "parser": "brigadier:string",
+                          "properties": "GREEDY_PHRASE",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "remove",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "group",
+                      "parser": "brigadier:string",
+                      "properties": "SINGLE_WORD",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "context",
+                          "parser": "brigadier:string",
+                          "properties": "GREEDY_PHRASE",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "settrack",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "track",
+                      "parser": "brigadier:string",
+                      "properties": "SINGLE_WORD",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "group",
+                          "parser": "brigadier:string",
+                          "properties": "SINGLE_WORD",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "context",
+                              "parser": "brigadier:string",
+                              "properties": "GREEDY_PHRASE",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "addtemp",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "group",
+                      "parser": "brigadier:string",
+                      "properties": "QUOTABLE_PHRASE",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "duration",
+                          "parser": "brigadier:string",
+                          "properties": "SINGLE_WORD",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "context",
+                              "parser": "brigadier:string",
+                              "properties": "GREEDY_PHRASE",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "removetemp",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "group",
+                      "parser": "brigadier:string",
+                      "properties": "SINGLE_WORD",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "context",
+                          "parser": "brigadier:string",
+                          "properties": "GREEDY_PHRASE",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "clear",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "context",
+                      "parser": "brigadier:string",
+                      "properties": "GREEDY_PHRASE",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "cleartrack",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "track",
+                      "parser": "brigadier:string",
+                      "properties": "SINGLE_WORD",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "context",
+                          "parser": "brigadier:string",
+                          "properties": "GREEDY_PHRASE",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "switchprimarygroup",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "group",
+                      "parser": "brigadier:string",
+                      "properties": "QUOTABLE_PHRASE",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "literal",
+              "name": "meta",
+              "children": [
+                {
+                  "type": "literal",
+                  "name": "info",
+                  "children": []
+                },
+                {
+                  "type": "literal",
+                  "name": "set",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "key",
+                      "parser": "brigadier:string",
+                      "properties": "QUOTABLE_PHRASE",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "value",
+                          "parser": "brigadier:string",
+                          "properties": "QUOTABLE_PHRASE",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "context",
+                              "parser": "brigadier:string",
+                              "properties": "GREEDY_PHRASE",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "unset",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "key",
+                      "parser": "brigadier:string",
+                      "properties": "QUOTABLE_PHRASE",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "context",
+                          "parser": "brigadier:string",
+                          "properties": "GREEDY_PHRASE",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "settemp",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "key",
+                      "parser": "brigadier:string",
+                      "properties": "QUOTABLE_PHRASE",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "value",
+                          "parser": "brigadier:string",
+                          "properties": "QUOTABLE_PHRASE",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "duration",
+                              "parser": "brigadier:string",
+                              "properties": "SINGLE_WORD",
+                              "children": [
+                                {
+                                  "type": "argument",
+                                  "name": "context",
+                                  "parser": "brigadier:string",
+                                  "properties": "GREEDY_PHRASE",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "unsettemp",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "key",
+                      "parser": "brigadier:string",
+                      "properties": "QUOTABLE_PHRASE",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "context",
+                          "parser": "brigadier:string",
+                          "properties": "GREEDY_PHRASE",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "addprefix",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "priority",
+                      "parser": "brigadier:integer",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "prefix",
+                          "parser": "brigadier:string",
+                          "properties": "QUOTABLE_PHRASE",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "context",
+                              "parser": "brigadier:string",
+                              "properties": "GREEDY_PHRASE",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "addsuffix",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "priority",
+                      "parser": "brigadier:integer",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "suffix",
+                          "parser": "brigadier:string",
+                          "properties": "QUOTABLE_PHRASE",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "context",
+                              "parser": "brigadier:string",
+                              "properties": "GREEDY_PHRASE",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "setprefix",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "priority",
+                      "parser": "brigadier:integer",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "prefix",
+                          "parser": "brigadier:string",
+                          "properties": "QUOTABLE_PHRASE",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "context",
+                              "parser": "brigadier:string",
+                              "properties": "GREEDY_PHRASE",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "setsuffix",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "priority",
+                      "parser": "brigadier:integer",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "suffix",
+                          "parser": "brigadier:string",
+                          "properties": "QUOTABLE_PHRASE",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "context",
+                              "parser": "brigadier:string",
+                              "properties": "GREEDY_PHRASE",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "removeprefix",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "priority",
+                      "parser": "brigadier:integer",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "prefix",
+                          "parser": "brigadier:string",
+                          "properties": "QUOTABLE_PHRASE",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "context",
+                              "parser": "brigadier:string",
+                              "properties": "GREEDY_PHRASE",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "removesuffix",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "priority",
+                      "parser": "brigadier:integer",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "suffix",
+                          "parser": "brigadier:string",
+                          "properties": "QUOTABLE_PHRASE",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "context",
+                              "parser": "brigadier:string",
+                              "properties": "GREEDY_PHRASE",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "addtempprefix",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "priority",
+                      "parser": "brigadier:integer",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "prefix",
+                          "parser": "brigadier:string",
+                          "properties": "QUOTABLE_PHRASE",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "duration",
+                              "parser": "brigadier:string",
+                              "properties": "SINGLE_WORD",
+                              "children": [
+                                {
+                                  "type": "argument",
+                                  "name": "context",
+                                  "parser": "brigadier:string",
+                                  "properties": "GREEDY_PHRASE",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "addtempsuffix",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "priority",
+                      "parser": "brigadier:integer",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "suffix",
+                          "parser": "brigadier:string",
+                          "properties": "QUOTABLE_PHRASE",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "duration",
+                              "parser": "brigadier:string",
+                              "properties": "SINGLE_WORD",
+                              "children": [
+                                {
+                                  "type": "argument",
+                                  "name": "context",
+                                  "parser": "brigadier:string",
+                                  "properties": "GREEDY_PHRASE",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "settempprefix",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "priority",
+                      "parser": "brigadier:integer",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "prefix",
+                          "parser": "brigadier:string",
+                          "properties": "QUOTABLE_PHRASE",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "duration",
+                              "parser": "brigadier:string",
+                              "properties": "SINGLE_WORD",
+                              "children": [
+                                {
+                                  "type": "argument",
+                                  "name": "context",
+                                  "parser": "brigadier:string",
+                                  "properties": "GREEDY_PHRASE",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "settempsuffix",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "priority",
+                      "parser": "brigadier:integer",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "suffix",
+                          "parser": "brigadier:string",
+                          "properties": "QUOTABLE_PHRASE",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "duration",
+                              "parser": "brigadier:string",
+                              "properties": "SINGLE_WORD",
+                              "children": [
+                                {
+                                  "type": "argument",
+                                  "name": "context",
+                                  "parser": "brigadier:string",
+                                  "properties": "GREEDY_PHRASE",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "removetempprefix",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "priority",
+                      "parser": "brigadier:integer",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "prefix",
+                          "parser": "brigadier:string",
+                          "properties": "QUOTABLE_PHRASE",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "context",
+                              "parser": "brigadier:string",
+                              "properties": "GREEDY_PHRASE",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "removetempsuffix",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "priority",
+                      "parser": "brigadier:integer",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "suffix",
+                          "parser": "brigadier:string",
+                          "properties": "QUOTABLE_PHRASE",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "context",
+                              "parser": "brigadier:string",
+                              "properties": "GREEDY_PHRASE",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "clear",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "context",
+                      "parser": "brigadier:string",
+                      "properties": "GREEDY_PHRASE",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "literal",
+              "name": "editor",
+              "children": []
+            },
+            {
+              "type": "literal",
+              "name": "promote",
+              "children": [
+                {
+                  "type": "argument",
+                  "name": "track",
+                  "parser": "brigadier:string",
+                  "properties": "SINGLE_WORD",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "context",
+                      "parser": "brigadier:string",
+                      "properties": "GREEDY_PHRASE",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "literal",
+              "name": "demote",
+              "children": [
+                {
+                  "type": "argument",
+                  "name": "track",
+                  "parser": "brigadier:string",
+                  "properties": "SINGLE_WORD",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "context",
+                      "parser": "brigadier:string",
+                      "properties": "GREEDY_PHRASE",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "literal",
+              "name": "showtracks",
+              "children": []
+            },
+            {
+              "type": "literal",
+              "name": "clear",
+              "children": [
+                {
+                  "type": "argument",
+                  "name": "context",
+                  "parser": "brigadier:string",
+                  "properties": "GREEDY_PHRASE",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "literal",
+              "name": "clone",
+              "children": [
+                {
+                  "type": "argument",
+                  "name": "user",
+                  "parser": "brigadier:string",
+                  "properties": "SINGLE_WORD",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "literal",
+      "name": "group",
+      "children": [
+        {
+          "type": "argument",
+          "name": "group",
+          "parser": "brigadier:string",
+          "properties": "SINGLE_WORD",
+          "children": [
+            {
+              "type": "literal",
+              "name": "info",
+              "children": []
+            },
+            {
+              "type": "literal",
+              "name": "permission",
+              "children": [
+                {
+                  "type": "literal",
+                  "name": "info",
+                  "children": []
+                },
+                {
+                  "type": "literal",
+                  "name": "set",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "node",
+                      "parser": "brigadier:string",
+                      "properties": "QUOTABLE_PHRASE",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "value",
+                          "parser": "brigadier:bool",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "context",
+                              "parser": "brigadier:string",
+                              "properties": "GREEDY_PHRASE",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "unset",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "node",
+                      "parser": "brigadier:string",
+                      "properties": "QUOTABLE_PHRASE",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "context",
+                          "parser": "brigadier:string",
+                          "properties": "GREEDY_PHRASE",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "settemp",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "node",
+                      "parser": "brigadier:string",
+                      "properties": "QUOTABLE_PHRASE",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "value",
+                          "parser": "brigadier:bool",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "duration",
+                              "parser": "brigadier:string",
+                              "properties": "SINGLE_WORD",
+                              "children": [
+                                {
+                                  "type": "argument",
+                                  "name": "context",
+                                  "parser": "brigadier:string",
+                                  "properties": "GREEDY_PHRASE",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "unsettemp",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "node",
+                      "parser": "brigadier:string",
+                      "properties": "QUOTABLE_PHRASE",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "context",
+                          "parser": "brigadier:string",
+                          "properties": "GREEDY_PHRASE",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "check",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "node",
+                      "parser": "brigadier:string",
+                      "properties": "QUOTABLE_PHRASE",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "context",
+                          "parser": "brigadier:string",
+                          "properties": "GREEDY_PHRASE",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "checkinherits",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "node",
+                      "parser": "brigadier:string",
+                      "properties": "QUOTABLE_PHRASE",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "context",
+                          "parser": "brigadier:string",
+                          "properties": "GREEDY_PHRASE",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "clear",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "context",
+                      "parser": "brigadier:string",
+                      "properties": "GREEDY_PHRASE",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "literal",
+              "name": "parent",
+              "children": [
+                {
+                  "type": "literal",
+                  "name": "info",
+                  "children": []
+                },
+                {
+                  "type": "literal",
+                  "name": "set",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "group",
+                      "parser": "brigadier:string",
+                      "properties": "SINGLE_WORD",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "context",
+                          "parser": "brigadier:string",
+                          "properties": "GREEDY_PHRASE",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "add",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "group",
+                      "parser": "brigadier:string",
+                      "properties": "SINGLE_WORD",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "context",
+                          "parser": "brigadier:string",
+                          "properties": "GREEDY_PHRASE",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "remove",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "group",
+                      "parser": "brigadier:string",
+                      "properties": "SINGLE_WORD",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "context",
+                          "parser": "brigadier:string",
+                          "properties": "GREEDY_PHRASE",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "settrack",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "track",
+                      "parser": "brigadier:string",
+                      "properties": "SINGLE_WORD",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "group",
+                          "parser": "brigadier:string",
+                          "properties": "SINGLE_WORD",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "context",
+                              "parser": "brigadier:string",
+                              "properties": "GREEDY_PHRASE",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "addtemp",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "group",
+                      "parser": "brigadier:string",
+                      "properties": "QUOTABLE_PHRASE",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "duration",
+                          "parser": "brigadier:string",
+                          "properties": "SINGLE_WORD",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "context",
+                              "parser": "brigadier:string",
+                              "properties": "GREEDY_PHRASE",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "removetemp",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "group",
+                      "parser": "brigadier:string",
+                      "properties": "SINGLE_WORD",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "context",
+                          "parser": "brigadier:string",
+                          "properties": "GREEDY_PHRASE",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "clear",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "context",
+                      "parser": "brigadier:string",
+                      "properties": "GREEDY_PHRASE",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "cleartrack",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "track",
+                      "parser": "brigadier:string",
+                      "properties": "SINGLE_WORD",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "context",
+                          "parser": "brigadier:string",
+                          "properties": "GREEDY_PHRASE",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "literal",
+              "name": "meta",
+              "children": [
+                {
+                  "type": "literal",
+                  "name": "info",
+                  "children": []
+                },
+                {
+                  "type": "literal",
+                  "name": "set",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "key",
+                      "parser": "brigadier:string",
+                      "properties": "QUOTABLE_PHRASE",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "value",
+                          "parser": "brigadier:string",
+                          "properties": "QUOTABLE_PHRASE",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "context",
+                              "parser": "brigadier:string",
+                              "properties": "GREEDY_PHRASE",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "unset",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "key",
+                      "parser": "brigadier:string",
+                      "properties": "QUOTABLE_PHRASE",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "context",
+                          "parser": "brigadier:string",
+                          "properties": "GREEDY_PHRASE",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "settemp",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "key",
+                      "parser": "brigadier:string",
+                      "properties": "QUOTABLE_PHRASE",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "value",
+                          "parser": "brigadier:string",
+                          "properties": "QUOTABLE_PHRASE",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "duration",
+                              "parser": "brigadier:string",
+                              "properties": "SINGLE_WORD",
+                              "children": [
+                                {
+                                  "type": "argument",
+                                  "name": "context",
+                                  "parser": "brigadier:string",
+                                  "properties": "GREEDY_PHRASE",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "unsettemp",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "key",
+                      "parser": "brigadier:string",
+                      "properties": "QUOTABLE_PHRASE",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "context",
+                          "parser": "brigadier:string",
+                          "properties": "GREEDY_PHRASE",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "addprefix",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "priority",
+                      "parser": "brigadier:integer",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "prefix",
+                          "parser": "brigadier:string",
+                          "properties": "QUOTABLE_PHRASE",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "context",
+                              "parser": "brigadier:string",
+                              "properties": "GREEDY_PHRASE",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "addsuffix",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "priority",
+                      "parser": "brigadier:integer",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "suffix",
+                          "parser": "brigadier:string",
+                          "properties": "QUOTABLE_PHRASE",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "context",
+                              "parser": "brigadier:string",
+                              "properties": "GREEDY_PHRASE",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "setprefix",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "priority",
+                      "parser": "brigadier:integer",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "prefix",
+                          "parser": "brigadier:string",
+                          "properties": "QUOTABLE_PHRASE",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "context",
+                              "parser": "brigadier:string",
+                              "properties": "GREEDY_PHRASE",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "setsuffix",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "priority",
+                      "parser": "brigadier:integer",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "suffix",
+                          "parser": "brigadier:string",
+                          "properties": "QUOTABLE_PHRASE",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "context",
+                              "parser": "brigadier:string",
+                              "properties": "GREEDY_PHRASE",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "removeprefix",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "priority",
+                      "parser": "brigadier:integer",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "prefix",
+                          "parser": "brigadier:string",
+                          "properties": "QUOTABLE_PHRASE",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "context",
+                              "parser": "brigadier:string",
+                              "properties": "GREEDY_PHRASE",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "removesuffix",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "priority",
+                      "parser": "brigadier:integer",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "suffix",
+                          "parser": "brigadier:string",
+                          "properties": "QUOTABLE_PHRASE",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "context",
+                              "parser": "brigadier:string",
+                              "properties": "GREEDY_PHRASE",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "addtempprefix",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "priority",
+                      "parser": "brigadier:integer",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "prefix",
+                          "parser": "brigadier:string",
+                          "properties": "QUOTABLE_PHRASE",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "duration",
+                              "parser": "brigadier:string",
+                              "properties": "SINGLE_WORD",
+                              "children": [
+                                {
+                                  "type": "argument",
+                                  "name": "context",
+                                  "parser": "brigadier:string",
+                                  "properties": "GREEDY_PHRASE",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "addtempsuffix",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "priority",
+                      "parser": "brigadier:integer",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "suffix",
+                          "parser": "brigadier:string",
+                          "properties": "QUOTABLE_PHRASE",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "duration",
+                              "parser": "brigadier:string",
+                              "properties": "SINGLE_WORD",
+                              "children": [
+                                {
+                                  "type": "argument",
+                                  "name": "context",
+                                  "parser": "brigadier:string",
+                                  "properties": "GREEDY_PHRASE",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "settempprefix",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "priority",
+                      "parser": "brigadier:integer",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "prefix",
+                          "parser": "brigadier:string",
+                          "properties": "QUOTABLE_PHRASE",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "duration",
+                              "parser": "brigadier:string",
+                              "properties": "SINGLE_WORD",
+                              "children": [
+                                {
+                                  "type": "argument",
+                                  "name": "context",
+                                  "parser": "brigadier:string",
+                                  "properties": "GREEDY_PHRASE",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "settempsuffix",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "priority",
+                      "parser": "brigadier:integer",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "suffix",
+                          "parser": "brigadier:string",
+                          "properties": "QUOTABLE_PHRASE",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "duration",
+                              "parser": "brigadier:string",
+                              "properties": "SINGLE_WORD",
+                              "children": [
+                                {
+                                  "type": "argument",
+                                  "name": "context",
+                                  "parser": "brigadier:string",
+                                  "properties": "GREEDY_PHRASE",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "removetempprefix",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "priority",
+                      "parser": "brigadier:integer",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "prefix",
+                          "parser": "brigadier:string",
+                          "properties": "QUOTABLE_PHRASE",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "context",
+                              "parser": "brigadier:string",
+                              "properties": "GREEDY_PHRASE",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "removetempsuffix",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "priority",
+                      "parser": "brigadier:integer",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "suffix",
+                          "parser": "brigadier:string",
+                          "properties": "QUOTABLE_PHRASE",
+                          "children": [
+                            {
+                              "type": "argument",
+                              "name": "context",
+                              "parser": "brigadier:string",
+                              "properties": "GREEDY_PHRASE",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "literal",
+                  "name": "clear",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "context",
+                      "parser": "brigadier:string",
+                      "properties": "GREEDY_PHRASE",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "literal",
+              "name": "editor",
+              "children": []
+            },
+            {
+              "type": "literal",
+              "name": "listmembers",
+              "children": [
+                {
+                  "type": "argument",
+                  "name": "page",
+                  "parser": "brigadier:integer",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "literal",
+              "name": "setweight",
+              "children": [
+                {
+                  "type": "argument",
+                  "name": "weight",
+                  "parser": "brigadier:integer",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "literal",
+              "name": "setdisplayname",
+              "children": [
+                {
+                  "type": "argument",
+                  "name": "name",
+                  "parser": "brigadier:string",
+                  "properties": "SINGLE_WORD",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "literal",
+              "name": "showtracks",
+              "children": []
+            },
+            {
+              "type": "literal",
+              "name": "clear",
+              "children": [
+                {
+                  "type": "argument",
+                  "name": "context",
+                  "parser": "brigadier:string",
+                  "properties": "GREEDY_PHRASE",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "literal",
+              "name": "rename",
+              "children": [
+                {
+                  "type": "argument",
+                  "name": "newname",
+                  "parser": "brigadier:string",
+                  "properties": "SINGLE_WORD",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "literal",
+              "name": "clone",
+              "children": [
+                {
+                  "type": "argument",
+                  "name": "newname",
+                  "parser": "brigadier:string",
+                  "properties": "SINGLE_WORD",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "literal",
+      "name": "track",
+      "children": [
+        {
+          "type": "argument",
+          "name": "track",
+          "parser": "brigadier:string",
+          "properties": "SINGLE_WORD",
+          "children": [
+            {
+              "type": "literal",
+              "name": "info",
+              "children": []
+            },
+            {
+              "type": "literal",
+              "name": "append",
+              "children": [
+                {
+                  "type": "argument",
+                  "name": "group",
+                  "parser": "brigadier:string",
+                  "properties": "SINGLE_WORD",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "literal",
+              "name": "insert",
+              "children": [
+                {
+                  "type": "argument",
+                  "name": "group",
+                  "parser": "brigadier:string",
+                  "properties": "SINGLE_WORD",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "position",
+                      "parser": "brigadier:integer",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "literal",
+              "name": "remove",
+              "children": [
+                {
+                  "type": "argument",
+                  "name": "group",
+                  "parser": "brigadier:string",
+                  "properties": "SINGLE_WORD",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "literal",
+              "name": "clear",
+              "children": []
+            },
+            {
+              "type": "literal",
+              "name": "rename",
+              "children": [
+                {
+                  "type": "argument",
+                  "name": "newname",
+                  "parser": "brigadier:string",
+                  "properties": "SINGLE_WORD",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "literal",
+              "name": "clone",
+              "children": [
+                {
+                  "type": "argument",
+                  "name": "newname",
+                  "parser": "brigadier:string",
+                  "properties": "SINGLE_WORD",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "literal",
+      "name": "log",
+      "children": [
+        {
+          "type": "literal",
+          "name": "recent",
+          "children": [
+            {
+              "type": "argument",
+              "name": "user",
+              "parser": "brigadier:string",
+              "properties": "SINGLE_WORD",
+              "children": [
+                {
+                  "type": "argument",
+                  "name": "page",
+                  "parser": "brigadier:integer",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "literal",
+          "name": "search",
+          "children": [
+            {
+              "type": "argument",
+              "name": "query",
+              "parser": "brigadier:string",
+              "properties": "QUOTABLE_PHRASE",
+              "children": [
+                {
+                  "type": "argument",
+                  "name": "page",
+                  "parser": "brigadier:integer",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "literal",
+          "name": "notify",
+          "children": [
+            {
+              "type": "literal",
+              "name": "on",
+              "children": []
+            },
+            {
+              "type": "literal",
+              "name": "off",
+              "children": []
+            }
+          ]
+        },
+        {
+          "type": "literal",
+          "name": "userhistory",
+          "children": [
+            {
+              "type": "argument",
+              "name": "user",
+              "parser": "brigadier:string",
+              "properties": "SINGLE_WORD",
+              "children": [
+                {
+                  "type": "argument",
+                  "name": "page",
+                  "parser": "brigadier:integer",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "literal",
+          "name": "grouphistory",
+          "children": [
+            {
+              "type": "argument",
+              "name": "group",
+              "parser": "brigadier:string",
+              "properties": "SINGLE_WORD",
+              "children": [
+                {
+                  "type": "argument",
+                  "name": "page",
+                  "parser": "brigadier:integer",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "literal",
+          "name": "trackhistory",
+          "children": [
+            {
+              "type": "argument",
+              "name": "track",
+              "parser": "brigadier:string",
+              "properties": "SINGLE_WORD",
+              "children": [
+                {
+                  "type": "argument",
+                  "name": "page",
+                  "parser": "brigadier:integer",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "literal",
+      "name": "sync",
+      "children": []
+    },
+    {
+      "type": "literal",
+      "name": "info",
+      "children": []
+    },
+    {
+      "type": "literal",
+      "name": "editor",
+      "children": [
+        {
+          "type": "literal",
+          "name": "all",
+          "children": []
+        },
+        {
+          "type": "literal",
+          "name": "users",
+          "children": []
+        },
+        {
+          "type": "literal",
+          "name": "groups",
+          "children": []
+        }
+      ]
+    },
+    {
+      "type": "literal",
+      "name": "debug",
+      "children": []
+    },
+    {
+      "type": "literal",
+      "name": "verbose",
+      "children": [
+        {
+          "type": "literal",
+          "name": "on",
+          "children": [
+            {
+              "type": "argument",
+              "name": "filter",
+              "parser": "brigadier:string",
+              "properties": "GREEDY_PHRASE",
+              "children": []
+            }
+          ]
+        },
+        {
+          "type": "literal",
+          "name": "record",
+          "children": [
+            {
+              "type": "argument",
+              "name": "filter",
+              "parser": "brigadier:string",
+              "properties": "GREEDY_PHRASE",
+              "children": []
+            }
+          ]
+        },
+        {
+          "type": "literal",
+          "name": "off",
+          "children": []
+        },
+        {
+          "type": "literal",
+          "name": "paste",
+          "children": []
+        }
+      ]
+    },
+    {
+      "type": "literal",
+      "name": "tree",
+      "children": [
+        {
+          "type": "argument",
+          "name": "scope",
+          "parser": "brigadier:string",
+          "properties": "SINGLE_WORD",
+          "children": [
+            {
+              "type": "argument",
+              "name": "player",
+              "parser": "brigadier:string",
+              "properties": "SINGLE_WORD",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "literal",
+      "name": "search",
+      "children": [
+        {
+          "type": "argument",
+          "name": "permission",
+          "parser": "brigadier:string",
+          "properties": "QUOTABLE_PHRASE",
+          "children": []
+        }
+      ]
+    },
+    {
+      "type": "literal",
+      "name": "check",
+      "children": [
+        {
+          "type": "argument",
+          "name": "user",
+          "parser": "brigadier:string",
+          "properties": "SINGLE_WORD",
+          "children": [
+            {
+              "type": "argument",
+              "name": "permission",
+              "parser": "brigadier:string",
+              "properties": "QUOTABLE_PHRASE",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "literal",
+      "name": "networksync",
+      "children": []
+    },
+    {
+      "type": "literal",
+      "name": "import",
+      "children": [
+        {
+          "type": "argument",
+          "name": "file",
+          "parser": "brigadier:string",
+          "properties": "QUOTABLE_PHRASE",
+          "children": []
+        }
+      ]
+    },
+    {
+      "type": "literal",
+      "name": "export",
+      "children": [
+        {
+          "type": "argument",
+          "name": "file",
+          "parser": "brigadier:string",
+          "properties": "QUOTABLE_PHRASE",
+          "children": []
+        }
+      ]
+    },
+    {
+      "type": "literal",
+      "name": "reloadconfig",
+      "children": []
+    },
+    {
+      "type": "literal",
+      "name": "bulkupdate",
+      "children": [
+        {
+          "type": "argument",
+          "name": "datatype",
+          "parser": "brigadier:string",
+          "properties": "SINGLE_WORD",
+          "children": [
+            {
+              "type": "literal",
+              "name": "update",
+              "children": [
+                {
+                  "type": "argument",
+                  "name": "actionfield",
+                  "parser": "brigadier:string",
+                  "properties": "SINGLE_WORD",
+                  "children": [
+                    {
+                      "type": "argument",
+                      "name": "actionvalue",
+                      "parser": "brigadier:string",
+                      "properties": "QUOTABLE_PHRASE",
+                      "children": [
+                        {
+                          "type": "argument",
+                          "name": "constraint",
+                          "parser": "brigadier:string",
+                          "properties": "GREEDY_PHRASE",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "literal",
+              "name": "delete",
+              "children": [
+                {
+                  "type": "argument",
+                  "name": "constraint",
+                  "parser": "brigadier:string",
+                  "properties": "GREEDY_PHRASE",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "literal",
+      "name": "migration",
+      "children": [
+        {
+          "type": "argument",
+          "name": "plugin",
+          "parser": "brigadier:string",
+          "properties": "SINGLE_WORD",
+          "children": []
+        }
+      ]
+    },
+    {
+      "type": "literal",
+      "name": "creategroup",
+      "children": [
+        {
+          "type": "argument",
+          "name": "name",
+          "parser": "brigadier:string",
+          "properties": "SINGLE_WORD",
+          "children": []
+        }
+      ]
+    },
+    {
+      "type": "literal",
+      "name": "deletegroup",
+      "children": [
+        {
+          "type": "argument",
+          "name": "name",
+          "parser": "brigadier:string",
+          "properties": "SINGLE_WORD",
+          "children": []
+        }
+      ]
+    },
+    {
+      "type": "literal",
+      "name": "listgroups",
+      "children": []
+    },
+    {
+      "type": "literal",
+      "name": "createtrack",
+      "children": [
+        {
+          "type": "argument",
+          "name": "name",
+          "parser": "brigadier:string",
+          "properties": "SINGLE_WORD",
+          "children": []
+        }
+      ]
+    },
+    {
+      "type": "literal",
+      "name": "deletetrack",
+      "children": [
+        {
+          "type": "argument",
+          "name": "name",
+          "parser": "brigadier:string",
+          "properties": "SINGLE_WORD",
+          "children": []
+        }
+      ]
+    },
+    {
+      "type": "literal",
+      "name": "listtracks",
+      "children": []
+    }
+  ]
+}

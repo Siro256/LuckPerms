@@ -129,6 +129,13 @@
             <scope>provided</scope>
         </dependency>
 
+        <dependency>
+            <groupId>com.mojang</groupId>
+            <artifactId>brigadier</artifactId>
+            <version>0.1.27</version>
+            <scope>provided</scope>
+        </dependency>
+
 
         <!-- Vault -->
         <dependency>
